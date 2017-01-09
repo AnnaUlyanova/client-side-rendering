@@ -1,0 +1,12 @@
+{{> header}}
+<ul>
+  {{#each wombles}}
+    <li data-details="{{showingDetails}}" data-name="{{name}}">
+      <span>{{name}} ({{email}})</span>
+      {{#if showingDetails}}
+        {{> details}}
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>
+{{> footer}}
