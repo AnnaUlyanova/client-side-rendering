@@ -32,7 +32,10 @@ var headers = [{
 }]
 
 function getState () {
-  return wombles
+  vm = {
+    wombles: wombles
+  }
+  return vm
 }
 
 function setState (state) {
